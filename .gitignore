@@ -3,6 +3,7 @@
 .gcc-flags.json
 .pio
 include/
-lib/
+lib/*
+!lib/.gitkeep
 packages/*
 !packages/.gitkeep

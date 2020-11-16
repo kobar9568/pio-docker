@@ -60,3 +60,9 @@ $ docker-compose run -u $(id -u $USER):$(id -g $USER) platformio run --target up
 ```
 # chmod o+wr /dev/ttyUSB0
 ```
+
+### ライブラリの手動追加
+
+1. /lib/{ライブラリのディレクトリ}/ライブラリ.cppとライブラリ.hの形式でファイルを準備する
+2. `.ccls`にインクルードパスを追加する (-I./lib/{ライブラリのディレクトリ})
+
